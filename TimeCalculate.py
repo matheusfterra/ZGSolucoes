@@ -1,6 +1,7 @@
 #Importação da Biblioteca SymPy para Resolução de Sistemas Não Lineares
+'''Necessária a instalação da biblioteca Sympy para execução do programa'''
 from sympy import *
-
+import sys
 
 #Variáveis Auxiliares
 k=0
@@ -10,7 +11,11 @@ show_value=False
 class TimeCalculate:
     def __init__(self):
         #Checagem de Inicialização
-        print("Software Inicializado!")
+        print("Programa desenvolvido por Matheus Terra")
+        print("matheusfterra@hotmail.com")
+        print("\n")
+        print("Software Inicializado com Sucesso!")
+
 
     #Importação dos dados do TXT
     def get_input(self,input):
@@ -94,11 +99,22 @@ class TimeCalculate:
 
 #Programa Principal
 if __name__ == '__main__':
+    #Tenta executar o arquivo com o argumento sendo informado.
+    '''
+    EXECUTAR: python TimeCalculate.py input.txt
+    OU: python TimeCalculate.py
+    OBS: O arquivo input.txt deve estar localizado na mesma pasta.
+    '''
+    try:
+        arg = sys.argv[2]
+    except:
+        arg='input.txt'
+
     #Criação do Objeto
     calculate = TimeCalculate()
 
     #Importação do arquivo TXT
-    lists = calculate.get_input("input.txt")
+    lists = calculate.get_input(arg)
     #Variável Auxiliar
     count = 1
     #Laço de Repetição para todas as linhas do TXT
@@ -129,3 +145,15 @@ if __name__ == '__main__':
                 else:
                     pass
 
+'''
+Infelizmente, demandei muito tempo na interpretação e modelagem matemática e física do problema, 
+e não consegui finalizar corretamente estre programa. O Software funciona bem para Rotas 
+em que são passadas apenas 1 linha de parâmentros. Nos casos em que há mais de uma linha, não tive oportunidade de 
+finalizar a lógica.
+
+Agradeço a oportunidade.
+Disponibilizo esta programação, assim como o arquivo Input.txt em meu repositório do GitHub
+
+https://github.com/matheusfterra/ZGSolucoes
+
+'''
