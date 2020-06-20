@@ -1,5 +1,11 @@
 #Importação da Biblioteca SymPy para Resolução de Sistemas Não Lineares
-'''Necessária a instalação da biblioteca Sympy para execução do programa'''
+'''Necessária a instalação da biblioteca Sympy para execução do programa
+
+pip install sympy
+ou
+conda install sympy
+
+'''
 from sympy import *
 import sys
 
@@ -150,6 +156,8 @@ Infelizmente, demandei muito tempo na interpretação e modelagem matemática e 
 e não consegui finalizar corretamente estre programa. O Software funciona bem para Rotas 
 em que são passadas apenas 1 linha de parâmentros. Nos casos em que há mais de uma linha, não tive oportunidade de 
 finalizar a lógica.
+
+OBS. Para execução do projeto, é necessário a instalação da biblioteca Sympy, por meio do PIP ou Anaconda.
 
 Agradeço a oportunidade.
 Disponibilizo esta programação, assim como o arquivo Input.txt em meu repositório do GitHub
