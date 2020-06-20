@@ -154,7 +154,7 @@ if __name__ == '__main__':
 '''
 Infelizmente, demandei muito tempo na interpretação e modelagem matemática e física do problema, 
 e não consegui finalizar corretamente estre programa. O Software funciona bem para Rotas 
-em que são passadas apenas 1 linha de parâmentros. Nos casos em que há mais de uma linha, não tive oportunidade de 
+em que são passadas apenas 1 linha de parâmetros. Nos casos em que há mais de uma linha, não tive oportunidade de 
 finalizar a lógica.
 
 OBS. Para execução do projeto, é necessário a instalação da biblioteca Sympy, por meio do PIP ou Anaconda.
