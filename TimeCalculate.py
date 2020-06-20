@@ -7,6 +7,18 @@ class TimeCalculate:
     def __init__(self):
         print("Software Inicializado!")
 
+    def get_input(self,input):
+        file1 = open('{}'.format(input), 'r')
+        line = True
+        list = []
+        while line:
+            # print("Line: {}".format(line.strip()))
+            line = file1.readline()
+            caractere = line.strip().split(" ")
+            list.append(caractere)
+        file1.close()
+        return list
+
     def calculate(self,line1,line2):
         # line1 = [1, 40, 10, 5]
         # line2 = [20, 20, 20]
@@ -53,6 +65,9 @@ class TimeCalculate:
 
 if __name__ == '__main__':
     calculate = TimeCalculate()
+    lists = calculate.get_input("input.txt")
+    print(lists)
+    
     line1=[1,20,10,50]
     line2=[10,14,15]
     qtd_checkpoint=line1[0]
